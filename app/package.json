@@ -1,0 +1,31 @@
+{
+  "name": "crowsneverforget",
+  "version": "1.0.0",
+  "description": "Crows Never Forget Clipboard",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FocusThen/Clipboard.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "clipboard"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/FocusThen/Clipboard.git/issues"
+  },
+  "homepage": "https://github.com/FocusThen/Clipboard.git#readme",
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "vue": "^2.6.11"
+  }
+}

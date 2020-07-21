@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Crows Never Forget</title>
+</head>
+
+<body>
+  <div id="app">
+    <article class="panel is-primary">
+      <h1 class="panel-heading has-text-centered">{{title}}</h1>
+    </article>
+    <article v-for="(item, i) in historyReversed" @click="copyItem(item)" :key="i" class="message" :class="colorful(i)">
+      <div class="message-body">
+        <pre class="message-body">
+        {{ '\n' + item.text}}
+      </pre>
+        <small>{{item.clipped}}</small>
+      </div>
+    </article>
+  </div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
